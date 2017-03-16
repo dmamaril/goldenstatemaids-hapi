@@ -7,6 +7,12 @@ var stripe  = require('stripe')(process.env.STRIPE_SECRET);
 server.connection({ port: 3000, host: 'localhost', routes: { cors: true } });
 
 server.route({
+    config: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+        }
+    },
     method: 'POST',
     path: '/charge',
     handler: chargeHandler
