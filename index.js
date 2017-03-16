@@ -1,10 +1,8 @@
-process.env.STRIPE_SECRET = 'sk_test_5MiasKiLzMrzGyMbgNfuNEXN';
-
 var Hapi    = require('hapi');
 var server  = new Hapi.Server();
 var stripe  = require('stripe')(process.env.STRIPE_SECRET);
 
-server.connection({ port: 3000, host: 'localhost', routes: { cors: true } });
+server.connection({ port: ~~process.env.PORT, host: '0.0.0.0', routes: { cors: true } });
 
 server.route({
     config: {
