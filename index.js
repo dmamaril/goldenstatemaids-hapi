@@ -5,6 +5,12 @@ var stripe  = require('stripe')(process.env.STRIPE_SECRET);
 server.connection({ port: ~~process.env.PORT, host: '0.0.0.0', routes: { cors: true } });
 
 server.route({
+    method: 'GET',
+    path: '/',
+    handler: (request, reply) => reply('OK')
+})
+
+server.route({
     config: {
         cors: {
             origin: ['*'],
