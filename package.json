@@ -1,0 +1,23 @@
+{
+  "name": "goldenstatemaids-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmamaril/goldenstatemaids-hapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmamaril/goldenstatemaids-hapi/issues"
+  },
+  "homepage": "https://github.com/dmamaril/goldenstatemaids-hapi#readme",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "stripe": "^4.15.1"
+  }
+}
