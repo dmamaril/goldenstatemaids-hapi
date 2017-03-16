@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "publish": "git push heroku master && heroku ps:scale web=1"
   },
   "repository": {
     "type": "git",
