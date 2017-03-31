@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "publish": "git push heroku master && heroku ps:scale web=1"
+    "publish": "git push origin master && git push heroku master && heroku ps:scale web=1"
   },
   "repository": {
     "type": "git",
