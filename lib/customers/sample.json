@@ -1,7 +1,17 @@
 {
-    "first_name": "Don",
-    "last_name": "Mamaril",
-    "stripe_id": "ab138512dk",
-    "address": "2053 wendover lane san jose, ca 95121",
-    "email": "mamarildon@gmail.com"
+    "first_name"    : "Don",
+    "last_name"     : "Mamaril",
+    "email"         : "mamarildon@gmail.com",
+    "address"       : "2053 Wendover Lane, San Jose, CA 95121",
+    "stripe_id"     : "ab138512dk",
+    "preferred_team": "tianaraetran%40gmail%2Ecom",
+    "num_bookings"  : 3,
+    "book_history"  : {
+        "-KgIJGTb_ivj9M8tB2_R": true,
+        "-KgIBauHjy-pPO37r2ka": true,
+        "-KfQObeczjYGBXF7Uozu": true
+    },
+    "notes"         : "10/10 would do again",
+    "is_flagged"    : false,
+    "flag_notes"    : "N/A"
 }

@@ -1,4 +1,4 @@
-/Customers
+/Customers/email
     - first_name
     - last_name
     - email
@@ -31,6 +31,10 @@
     - photos
         - [ Firebase Storage Photos ]
 
+/AuthCaptureSchedule/business_date
+    - Transactions
+        - [ transaction-id ]
+
 /Transactions
     - Booking.id
     - initial_cost
@@ -49,7 +53,7 @@
         - total
     - notes
 
-/Teams
+/Teams/email
     - team_lead
     - members
     - ratings
@@ -58,7 +62,8 @@
     - book_history
         - [ Booking ]
 
-/Coupons
+/Coupons/code
+    - code
     - discount
     - expiration_date
     - issue_date
