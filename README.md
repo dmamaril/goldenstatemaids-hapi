@@ -1,6 +1,7 @@
 # goldenstatemaids-hapi
 
-## Depoly
+
+## Deploy
 ```
 npm run publish
 ```

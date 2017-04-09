@@ -1,0 +1,69 @@
+/Customers
+    - first_name
+    - last_name
+    - email
+    - address
+    - stripe_id
+    - preferred_team
+    - num_bookings
+    - book_history
+        - [ Booking ]
+    - notes
+    - is_flagged
+    - flag_notes
+
+/Booking
+    - Customer.id
+    - Team.id
+    - Transaction.id
+    - business_date
+    - job_details
+        - bed
+        - bath
+        - pets
+        - type [ standard, standard plus, deep clean ]
+        - add_ons [ oven, fridge, laundry, cabinets ]
+    - booking_details
+        - address
+        - entry_method [ home, doorman, hidden key, other ]
+        - entry_instructions
+        - additional_notes
+    - photos
+        - [ Firebase Storage Photos ]
+
+/Transactions
+    - Booking.id
+    - initial_cost
+        - subtotal
+        - coupon
+        - recurring_discount
+        - tax
+        - tax_rate
+        - total
+    - final_cost
+        - subtotal
+        - coupon
+        - recurring_discount
+        - tax
+        - tax_rate
+        - total
+    - notes
+
+/Teams
+    - team_lead
+    - members
+    - ratings
+    - num_cleanings
+    - regular_wage
+    - book_history
+        - [ Booking ]
+
+/Coupons
+    - discount
+    - expiration_date
+    - issue_date
+    - limit
+    - user_history
+        - [ Customer ]
+    - book_history
+        - [ Booking ]
