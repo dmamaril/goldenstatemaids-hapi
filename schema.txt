@@ -17,6 +17,8 @@
     - Team.id
     - Transaction.id
     - business_date
+    - start_time
+    - end_time
     - job_details
         - bed
         - bath
