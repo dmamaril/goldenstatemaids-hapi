@@ -7,9 +7,9 @@
     "preferred_team": "tianaraetran%40gmail%2Ecom",
     "num_bookings"  : 3,
     "book_history"  : {
-        "-KgIJGTb_ivj9M8tB2_R": true,
-        "-KgIBauHjy-pPO37r2ka": true,
-        "-KfQObeczjYGBXF7Uozu": true
+        "-KgIJGTb_ivj9M8tB2_R": "03-13-2017",
+        "-KgIBauHjy-pPO37r2ka": "03-23-2017",
+        "-KfQObeczjYGBXF7Uozu": "03-29-2017"
     },
     "notes"         : "10/10 would do again",
     "is_flagged"    : false,

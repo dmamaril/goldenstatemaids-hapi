@@ -2,7 +2,8 @@ import Hapi         from 'hapi';
 import firebase     from 'firebase';
 import stripePkg    from 'stripe';
 
-import customers from './lib/customers';
+import customer from './lib/customer';
+import booking from './lib/booking';
 
 require('dotenv').config();
 
@@ -49,7 +50,8 @@ const defaultConfig = {
 
 // INITIALIZE CUSTOM ROUTES;
 const routes = [].concat(
-    customers(firebase)
+    customer(firebase),
+    booking(firebase),
 );
 
 server.connection(connection);
