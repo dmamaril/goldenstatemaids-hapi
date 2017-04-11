@@ -2,9 +2,9 @@ import Hapi         from 'hapi';
 import firebase     from 'firebase';
 import stripePkg    from 'stripe';
 
-import customer from './lib/customer';
-import booking from './lib/booking';
-import transaction from './lib/transaction';
+import customer     from './lib/resources/customer';
+import booking      from './lib/resources/booking';
+import transaction  from './lib/resources/transaction';
 
 require('dotenv').config();
 

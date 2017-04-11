@@ -1,0 +1,12 @@
+{
+    "booking_id": "12345ABA283",
+    "initial_cost": {
+        "coupon": "DOESNT EXIST",
+        "coupon_discount": 1,
+        "subtotal": 100.50,
+        "recurring_discount_rate": 0.2,
+        "tax_total": 10.50,
+        "tax_rate": 10,
+        "total": 111
+    }
+}
