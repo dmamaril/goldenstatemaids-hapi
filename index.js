@@ -6,6 +6,8 @@ import customer     from './lib/resources/customer';
 import booking      from './lib/resources/booking';
 import transaction  from './lib/resources/transaction';
 
+import availabilityService from './lib/services/availability';
+
 require('dotenv').config();
 
 // INITIALIZE FIREBASE;
@@ -51,9 +53,14 @@ const defaultConfig = {
 
 // INITIALIZE CUSTOM ROUTES;
 const routes = [].concat(
+
+    // load resources;
     customer(firebase),
     booking(firebase),
-    transaction(firebase)
+    transaction(firebase),
+
+    // load services;
+    availabilityService(server, firebase)
 );
 
 server.connection(connection);
