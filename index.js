@@ -5,6 +5,7 @@ import stripePkg    from 'stripe';
 import customer     from './lib/resources/customer';
 import booking      from './lib/resources/booking';
 import transaction  from './lib/resources/transaction';
+import team         from './lib/resources/team';
 
 import availabilityService from './lib/services/availability';
 
@@ -58,6 +59,7 @@ const routes = [].concat(
     customer(firebase),
     booking(firebase),
     transaction(firebase),
+    team(firebase),
 
     // load services;
     availabilityService(server, firebase)
