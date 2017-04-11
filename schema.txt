@@ -15,7 +15,7 @@
 /Booking
     - Customer.id
     - Team.id
-    - Transaction.id
+    - sys_transaction_id
     - business_date
     - start_time
     - end_time
@@ -74,3 +74,5 @@
         - [ Customer ]
     - book_history
         - [ Booking ]
+    - num_used
+    - is_valid

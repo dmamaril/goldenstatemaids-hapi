@@ -4,6 +4,7 @@ import stripePkg    from 'stripe';
 
 import customer from './lib/customer';
 import booking from './lib/booking';
+import transaction from './lib/transaction';
 
 require('dotenv').config();
 
@@ -52,6 +53,7 @@ const defaultConfig = {
 const routes = [].concat(
     customer(firebase),
     booking(firebase),
+    transaction(firebase)
 );
 
 server.connection(connection);
